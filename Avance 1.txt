@@ -1,0 +1,11 @@
+resumen de tecnología (1 página)
+(* = opcional, en caso de que sea más de 1 página)
+
+	Definir JSF - Yuliana
+	Definir Facelets - Jose
+	*definir stateSaving
+	*definir Rich internet application
+	definir Glassfish - Diego y Christian
+	*definir Tomcat
+
+Guia de instalacion - Christian
