@@ -1,0 +1,5 @@
+- JSF
+- Facelets
+- Glassfish
+- Rich Web App
+- stateSaving

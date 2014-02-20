@@ -1,0 +1,20 @@
+Informe 1:
+
+El avance que tenemos que hacer para el martes 25 esto:
+- Guía de instalación en al menos 2 ambientes. 
+	Ya hablé con el profe sobre este punto, en nuestro caso lo de 2 ambientes no aplica, solo hay que hacer una guía de instalación con glassfish o tomcat.
+-  Resumen 1 página de la tecnología. 
+	Creo yo que con definir JSF, Facelets y la relación de Glassfish con JSF se va 1 página fácilmente.
+
+Responsabilidades:
+- 1 párrafo con la definición de JSF - YULIANA
+- 1 párrafo con la definición de Facelets - DIEGO
+- 1 párrafo con una explicación de la relación entre JFS y Glassfish (+definición de glassfish) - JOSE
+
+YO quiero hacer la guía de instalación. La voy a hacer con netbeans y glassfish.
+
+YULIANA, por su organización le voy a pedir que sea usted la que integre el documento e imprima (no se si hay que imprimirlo). También hágale un control de calidad al documento (osea, que los párrafos hagan coherencia entre ellos).
+
+Tengámolo todo listo para el Sábado 22 en la noche para que YULIANA integre el documento el Domingo o Lunes.
+
+---
