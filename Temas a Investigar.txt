@@ -3,3 +3,6 @@
 - Glassfish
 - Rich Web App
 - stateSaving
+- Faces Servlet
+- Managed Bean
+
