@@ -1,1 +1,2 @@
 https://netbeans.org/kb/docs/web/jsf20-intro.html#usingManagedBean
+http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=jsf2FaceletsTemplatesAndCompositeComponents
