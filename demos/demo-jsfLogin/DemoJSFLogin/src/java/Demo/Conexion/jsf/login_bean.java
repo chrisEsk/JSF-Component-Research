@@ -30,7 +30,7 @@ public class login_bean implements Serializable {
      */
     public login_bean() throws Exception {
         con = new Conexion();
-        username = "Yuli";
+//        username = "Yuli";
     }
     
     public String getUsername() {
@@ -74,9 +74,9 @@ public class login_bean implements Serializable {
         flagUser = validarUsuario(username, password);
         System.out.println(flagUser);
         if (flagUser) {
-            return "valid";
+            return "Existe el usuario.";
         }else{
-            return "invalid";  
+            return "No existe el usuario o esta ingresando una contraseña invalida.";  
         }
     }
         
