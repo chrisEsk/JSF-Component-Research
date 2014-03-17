@@ -9,7 +9,7 @@ package Demo.Conexion.jsf;
 import java.sql.ResultSet;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
-import sunw.io.Serializable;
+import java.io.Serializable;
 
 /**
  *
@@ -22,6 +22,8 @@ public class login_bean implements Serializable {
     Conexion con;
     private String username;
     private String password;
+    String response;
+
 
     /**
      * Creates a new instance of login_bean
@@ -65,7 +67,7 @@ public class login_bean implements Serializable {
        
     }
         
-    public String checkValidUser() throws Exception
+    public String getResponse() throws Exception
     {
         boolean flagUser;
         
