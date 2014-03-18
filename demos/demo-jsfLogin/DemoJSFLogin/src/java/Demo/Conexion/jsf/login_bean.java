@@ -74,7 +74,7 @@ public class login_bean implements Serializable {
         flagUser = validarUsuario(username, password);
         System.out.println(flagUser);
         if (flagUser) {
-            return "Existe el usuario.";
+            return "Bienvenida " + getUsername();
         }else{
             return "No existe el usuario o esta ingresando una contraseña invalida.";  
         }

@@ -10,32 +10,30 @@
         <title>Demo Login Usuario</title>
     </h:head>
     <h:body>
-        <f:view>
-            <h:form id="login_frm">
-                <h2>Login</h2>
-                    <table width="250" border="0" cellspacing="0" cellpadding="2">
-                    <tr>
-                        <td colspan="2">
-                            <h:message for="username" styleClass="errorMsg"/><br/>
-                            <h:message for="password" styleClass="errorMsg"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h:outputText value="Username : "/></td>
-                        <td><h:inputText id="username" value="#{login_bean.username}" required="true" styleClass="input_text"/></td>
-                    </tr>
-                    <tr>
-                        <td><h:outputText value="Password : "/></td>
-                        <td><h:inputSecret id="password" value="#{login_bean.password}" required="true" styleClass="input_text"/></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="center">
-                            <h:commandButton action="response" value="Login" type="submit"/>
-                        </td>
-                    </tr>
-                </table>
-            </h:form>
-        </f:view>
+        <div class="container">
+            <div class="form-bg">
+                <f:view>
+                    <h:form id="login_frm">
+                        <h2>Login</h2>
+                            <table width="250" border="0" cellspacing="0" cellpadding="2">
+                            <tr>
+                                <td><h:outputText class="label" value="Username"/></td>
+                                <td><h:inputText id="username" value="#{login_bean.username}" required="true" styleClass="input_text"/></td>
+                            </tr>
+                            <tr>
+                                <td><h:outputText class="label" value="Password"/></td>
+                                <td><h:inputSecret id="password" value="#{login_bean.password}" required="true" styleClass="input_text" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <h:commandButton class="button" action="response" type="submit"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </h:form>
+                </f:view>
+            </div>
+        </div><!-- container -->         
     </h:body>
 </html>
 

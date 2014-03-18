@@ -5,13 +5,14 @@
       xmlns:f="http://java.sun.com/jsf/core">
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <h:outputStylesheet name="css/style.css"/>
         <title>Response</title>
     </h:head>
     <h:body>
         <f:view>
             <h:form>
-                <h2><h:outputText value="#{login_bean.response}"/></h2>
-                 <h:commandButton id="backButton" value="Back" action="login" />
+                <h2><h:outputText class="mensaje" value="#{login_bean.response}"/></h2>
+                 <h:commandButton id="backButton" class="back" value="Back" action="login" />
             </h:form>
         </f:view>
     </h:body> 
