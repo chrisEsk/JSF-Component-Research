@@ -3,10 +3,53 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Facelet Title</title>
+        <title>Demo Calculadora</title>
+        <h:outputStylesheet name="css/style.css" />
+        <h:outputScript name="js/jquery-1.11.0.min.js" />
+        <h:outputScript>
+            $ = jQuery;
+            $(document).ready(function() {
+                $("#entrada").focus();
+                $("#entrada").keypress(function(event) {
+                    var c = String.fromCharCode(event.which);
+                    if (!$.isNumeric(c)) {
+                        if (c != "-") {
+                            $("#err").text("Error: Solo se pueden ingresar números o el signo '-'").show().delay(1700).fadeOut(800);
+                            event.stopPropagation();
+                            return false;
+                        }
+                    }
+                });
+            });
+        </h:outputScript>
     </h:head>
     <h:body>
-        Hello from Facelets
+        <div id="container-calc">
+            <h1>Calculadora</h1>
+            <h:form prependId="false">
+                <div id="container-inout">
+                    <p><h:inputText id="entrada" size="10" maxlength="4" value="#{CalculadoraBean.input}" class="input-text" autocomplete="off" /></p>
+                    <p><h:outputText id="acumulador" escape="false" value="#{CalculadoraBean.accum}"/></p>
+                </div>
+                <div>
+                    <h:commandButton id="btn-sum" value="+" action="#{CalculadoraBean.sum}" class="btn" />
+                    <h:commandButton id="btn-diff" value="-" action="#{CalculadoraBean.diff}" class="btn" />
+                    <h:commandButton id="btn-mul" value="*" action="#{CalculadoraBean.mul}" class="btn" />
+                    <h:commandButton id="btn-div" value="/" action="#{CalculadoraBean.divi}" class="btn" />
+                    <h:commandButton id="btn-fact" value="!" action="#{CalculadoraBean.factorial}" class="btn" />
+                    <h:commandButton id="btn-pow" value="^" action="#{CalculadoraBean.pow}" class="btn" />
+                </div>
+                <div>
+                    <h:commandButton id="btn-mset" value="M+" action="#{CalculadoraBean.memorySet}" class="btn" />
+                    <h:commandButton id="btn-mget" value="Mr" action="#{CalculadoraBean.memoryGet}" class="btn" />
+                    <h:commandButton id="btn-mclear" value="Mc" action="#{CalculadoraBean.memoryClear}" class="btn" />
+                    <h:commandButton id="btn-result" value="=" action="#{CalculadoraBean.result}" class="btn" />
+                </div>
+                <div>
+                    <p id="err" style="color: red; display: none;"></p>
+                </div>
+            </h:form>
+        </div>
     </h:body>
 </html>
 
