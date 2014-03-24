@@ -92,7 +92,7 @@ body
     display: inline-block;
     margin-left: 2px;
     padding-top: 2px;
-    font-size: 35px;
+    font-size: 28px;
 }
 
 .back {
@@ -101,9 +101,9 @@ body
     font-size: 14px;
     background-color: #00CCB8;
     color: #009990;
-    float: left;
-    margin-top: 10px;
-    margin-left: 185px;
+    float: right;
+    margin-top: -48px;
+    margin-right: 13px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     moz-border-radius: .3em;
     border-radius: .3em;
@@ -118,3 +118,13 @@ body
     padding: 5px;
 }
  
+.frm-response {
+    width: 1013px;
+    height: 450px;
+    -moz-border-radius:9px;
+    -webkit-border-radius:9px;
+    border-radius:9px;
+    margin: 44px auto 0;
+    background: url(../images/form-bg.png) top left;
+    padding: 8px 0 0 8px; 
+}
