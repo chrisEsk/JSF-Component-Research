@@ -15,9 +15,9 @@ import java.io.Serializable;
  *
  * @author Yuli
  */
-@ManagedBean(name = "login_bean")
+@ManagedBean(name = "loginBean")
 @RequestScoped
-public class login_bean implements Serializable {
+public class loginBean implements Serializable {
     
     Conexion con;
     private String username;
@@ -28,7 +28,7 @@ public class login_bean implements Serializable {
     /**
      * Creates a new instance of login_bean
      */
-    public login_bean() throws Exception {
+    public loginBean() throws Exception {
         con = new Conexion();
 //        username = "Yuli";
     }
