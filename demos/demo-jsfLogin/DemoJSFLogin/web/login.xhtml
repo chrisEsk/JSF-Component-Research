@@ -12,26 +12,24 @@
     <h:body>
         <div class="container">
             <div class="form-bg">
-                <f:view>
-                    <h:form id="login_frm">
-                        <h2>Login</h2>
-                            <table width="250" border="0" cellspacing="0" cellpadding="2">
-                            <tr>
-                                <td><h:outputText class="label" value="Username"/></td>
-                                <td><h:inputText id="username" value="#{loginBean.username}" required="true" styleClass="input_text"/></td>
-                            </tr>
-                            <tr>
-                                <td><h:outputText class="label" value="Password"/></td>
-                                <td><h:inputSecret id="password" value="#{loginBean.password}" required="true" styleClass="input_text" /></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" align="center">
-                                    <h:commandButton class="button" action="response" type="submit"/>
-                                </td>
-                            </tr>
-                        </table>
-                    </h:form>
-                </f:view>
+                <h:form id="login_frm">
+                    <h2>Login</h2>
+                        <table width="250" border="0" cellspacing="0" cellpadding="2">
+                        <tr>
+                            <td><h:outputText class="label" value="Username"/></td>
+                            <td><h:inputText id="username" value="#{loginBean.username}" required="true" styleClass="input_text"/></td>
+                        </tr>
+                        <tr>
+                            <td><h:outputText class="label" value="Password"/></td>
+                            <td><h:inputSecret id="password" value="#{loginBean.password}" required="true" styleClass="input_text" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <h:commandButton class="button" action="response" type="submit"/>
+                            </td>
+                        </tr>
+                    </table>
+                </h:form>
             </div>
         </div><!-- container -->         
     </h:body>
